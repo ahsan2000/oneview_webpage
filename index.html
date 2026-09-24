@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7faf7">
+  <meta name="description" content="OneView brings stocks, mutual funds, and VPS/pension investments into one private portfolio view. Track holdings, returns, dividends, and historical activity.">
+  <title>OneView — One place for every investment</title>
+  <link rel="icon" href="assets/oneview-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion-ready");</script>
+  <script src="gallery.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="/" aria-label="OneView home"><img src="assets/oneview-mark.svg" alt=""><span>One<em>View</em></span></a>
+    <nav class="nav" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="#features">Features</a><a href="#screenshots">Explore App</a><a href="/about">About Us</a><a class="nav-contact" href="/contact">Contact Us</a></nav>
+    <details class="menu"><summary>Menu</summary><nav class="mobile-nav" aria-label="Mobile navigation"><a href="/" aria-current="page">Home</a><a href="#features">Features</a><a href="#screenshots">Explore App</a><a href="/about">About Us</a><a href="/contact">Contact Us</a></nav></details>
+  </div></header>
+  <main>
+    <section class="hero"><div class="container hero-grid">
+      <div data-reveal><p class="eyebrow">Your portfolio, one clear view</p><h1>Every investment.<br><span>OneView.</span></h1><p class="lead">Bring your stocks, mutual funds, and VPS/pension holdings together. Record what happened, understand what you own, and keep your portfolio on your device.</p><div class="hero-actions"><a class="button button-primary" href="#screenshots">Explore the app →</a><a class="button button-outline" href="#features">See features</a></div><p class="availability">Coming to Google Play</p></div>
+      <div class="hero-art" aria-hidden="true" data-reveal><div class="orbit-label one">Stocks <span>•</span> Funds <span>•</span> Pension</div><img class="app-icon" src="assets/oneview-mark.svg" alt=""><div class="orbit-label two"><span>One place</span> for every investment</div></div>
+    </div></section>
+    <div class="container stats" aria-label="App highlights"><div class="stat" data-reveal><strong>One portfolio</strong><small>Across three investment categories</small></div><div class="stat" data-reveal><strong>Private by design</strong><small>Portfolio records stored on device</small></div><div class="stat" data-reveal><strong>Read-only tracking</strong><small>No trading or money movement</small></div></div>
+    <section class="section" id="features"><div class="container"><div class="section-head" data-reveal><p class="eyebrow">Made for clarity</p><h2>Know more about your portfolio.</h2><p>OneView turns historical transactions into an organized picture of holdings, performance, and income.</p></div><div class="feature-grid">
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">◫</div><h3>All your holdings</h3><p>View stocks, mutual funds, and VPS/pension investments in one portfolio.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">↗</div><h3>Performance at a glance</h3><p>See valuations, invested amount, returns, and allocation from your records and saved prices.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">≋</div><h3>Activity that adds up</h3><p>Track historical buys, sells, fees, dividends, and compatible fund transfers.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">⌁</div><h3>Market updates</h3><p>Refresh available public price, NAV, and payout information from external market sources.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">⇩</div><h3>Smarter statement import</h3><p>Read supported PDF, CSV, and TXT statements on your device—including scanned PDFs with on-device text recognition—and review every proposed change before importing.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">◇</div><h3>Your data, your control</h3><p>Use a privacy PIN or device biometrics, and export or restore a backup when you choose.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">↗</div><h3>Share to OneView</h3><p>Use Android’s Share or Open with menu to send a PDF, CSV, or TXT statement directly to OneView, choose its investment category, and review the detected records.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">◷</div><h3>Statement reminders</h3><p>Choose an optional weekly or monthly device notification reminding you to download and import your latest statement.</p></article>
+    </div></div></section>
+    <section class="section screenshot-section" id="screenshots">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Inside OneView</p>
+          <h2>Explore the real app.</h2>
+          <p>Browse the dashboard, portfolio mix, investments, activity, and settings captured from OneView on Android.</p>
+        </div>
+        <div class="showcase" data-reveal id="app-showcase" aria-roledescription="carousel" aria-label="OneView app screenshots">
+          <div class="showcase-main">
+            <div class="showcase-visual">
+              <div class="screen-frame"><img id="showcase-image" src="assets/screenshot-dashboard.png" width="1080" height="2340" alt="OneView overview showing portfolio value and performance chart"></div>
+            </div>
+            <div class="showcase-copy">
+              <p class="showcase-count" id="showcase-count">01 / 05</p>
+              <h3 id="showcase-title">Your complete picture</h3>
+              <p id="showcase-description">See your total portfolio value, invested amount, and performance over time in one clear view.</p>
+              <div class="showcase-controls">
+                <button type="button" class="showcase-arrow" id="showcase-previous" aria-label="Previous screenshot">← <span>Previous</span></button>
+                <button type="button" class="showcase-arrow" id="showcase-next" aria-label="Next screenshot"><span>Next</span> →</button>
+                <button type="button" class="showcase-arrow showcase-autoplay" id="showcase-autoplay" aria-pressed="true">Pause autoplay</button>
+              </div>
+              <p class="sr-only" id="showcase-status" role="status" aria-live="polite"></p>
+              <p class="showcase-note">Actual OneView screens. The portfolio figures shown belong to the developer.</p>
+            </div>
+          </div>
+          <div class="slide-picker" role="group" aria-label="Choose an app screen">
+            <button type="button" class="slide-tab" data-slide="0" aria-pressed="true"><span>01</span> Overview</button>
+            <button type="button" class="slide-tab" data-slide="1" aria-pressed="false"><span>02</span> Portfolio mix</button>
+            <button type="button" class="slide-tab" data-slide="2" aria-pressed="false"><span>03</span> Investment</button>
+            <button type="button" class="slide-tab" data-slide="3" aria-pressed="false"><span>04</span> Activity</button>
+            <button type="button" class="slide-tab" data-slide="4" aria-pressed="false"><span>05</span> Settings</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section"><div class="container"><div class="privacy-band" data-reveal><div><p class="eyebrow">Privacy first</p><h2>Your portfolio stays yours.</h2><p>Portfolio records stay in private app storage, and PDF, CSV, and TXT statements are processed on device. You can control local reminders, backups, and app lock settings. Public market data requests go directly to external providers.</p></div><a class="button button-outline" href="/privacy">Read privacy policy →</a></div><p class="fine-print">Figures and market information are for record keeping and general information. Verify important values against official records.</p></div></section>
+    <section class="section" style="padding-top:0"><div class="container"><div class="contact-card" data-reveal><div><p class="eyebrow">Questions or feedback?</p><h2>We’d love to hear from you.</h2><p>Get help with OneView, share feedback, or tell us what you would like to see next.</p></div><a class="button button-primary" href="/contact">Contact Us →</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="/"><img src="assets/oneview-mark.svg" alt=""><span>One<em>View</em></span></a><p>© 2026 <a class="footer-author" href="https://ahsan2000.github.io/portfolio" target="_blank" rel="noopener noreferrer">Ahsan Nawaz</a>. One place for every investment.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="/about">About Us</a><a href="/contact">Contact Us</a><a href="/privacy">Privacy policy</a><a href="/terms">Terms &amp; conditions</a></nav></div></footer>
+</body>
+</html>
