@@ -7,9 +7,9 @@
   <meta name="description" content="OneView brings stocks, mutual funds, and VPS/pension investments into one private portfolio view. Track holdings, returns, dividends, and historical activity.">
   <title>OneView — One place for every investment</title>
   <link rel="icon" href="assets/oneview-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script>if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion-ready");</script>
-  <script src="gallery.js" defer></script>
+  <script src="gallery.js?v=2" defer></script>
   <script src="motion.js" defer></script>
 </head>
 <body>
@@ -29,7 +29,7 @@
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">◫</div><h3>All your holdings</h3><p>View stocks, mutual funds, and VPS/pension investments in one portfolio.</p></article>
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">↗</div><h3>Performance at a glance</h3><p>See valuations, invested amount, returns, and allocation from your records and saved prices.</p></article>
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">≋</div><h3>Activity that adds up</h3><p>Track historical buys, sells, fees, dividends, and compatible fund transfers.</p></article>
-      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">⌁</div><h3>Market updates</h3><p>Refresh available public price, NAV, and payout information from external market sources.</p></article>
+      <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">⌁</div><h3>Market updates</h3><p>Refresh available public stock prices and payouts from <a href="https://dps.psx.com.pk/">Pakistan Stock Exchange (PSX)</a>, and mutual-fund and pension-fund NAVs and payouts from <a href="https://www.mufap.com.pk/">MUFAP</a>.</p></article>
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">⇩</div><h3>Smarter statement import</h3><p>Read supported PDF, CSV, and TXT statements on your device—including scanned PDFs with on-device text recognition—and review every proposed change before importing.</p></article>
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">◇</div><h3>Your data, your control</h3><p>Use a privacy PIN or device biometrics, and export or restore a backup when you choose.</p></article>
       <article class="feature-card" data-reveal><div class="feature-icon" aria-hidden="true">↗</div><h3>Share to OneView</h3><p>Use Android’s Share or Open with menu to send a PDF, CSV, or TXT statement directly to OneView, choose its investment category, and review the detected records.</p></article>
@@ -45,7 +45,7 @@
         <div class="showcase" data-reveal id="app-showcase" aria-roledescription="carousel" aria-label="OneView app screenshots">
           <div class="showcase-main">
             <div class="showcase-visual">
-              <div class="screen-frame"><img id="showcase-image" src="assets/screenshot-dashboard.png" width="1080" height="2340" alt="OneView overview showing portfolio value and performance chart"></div>
+              <div class="screen-frame"><img id="showcase-image" src="assets/screenshot-dashboard.webp" width="1080" height="2340" loading="lazy" decoding="async" alt="OneView overview showing portfolio value and performance chart"></div>
             </div>
             <div class="showcase-copy">
               <p class="showcase-count" id="showcase-count">01 / 05</p>
@@ -70,7 +70,7 @@
         </div>
       </div>
     </section>
-    <section class="section"><div class="container"><div class="privacy-band" data-reveal><div><p class="eyebrow">Privacy first</p><h2>Your portfolio stays yours.</h2><p>Portfolio records stay in private app storage, and PDF, CSV, and TXT statements are processed on device. You can control local reminders, backups, and app lock settings. Public market data requests go directly to external providers.</p></div><a class="button button-outline" href="/privacy">Read privacy policy →</a></div><p class="fine-print">Figures and market information are for record keeping and general information. Verify important values against official records.</p></div></section>
+    <section class="section"><div class="container"><div class="privacy-band" data-reveal><div><p class="eyebrow">Privacy first</p><h2>Your portfolio stays yours.</h2><p>Portfolio records stay in private app storage, and PDF, CSV, and TXT statements are processed on device. You can control local reminders, backups, and app lock settings. Public market data requests go directly to <a href="https://dps.psx.com.pk/">Pakistan Stock Exchange (PSX)</a> and <a href="https://www.mufap.com.pk/">MUFAP</a>.</p></div><a class="button button-outline" href="/privacy">Read privacy policy →</a></div><p class="fine-print">Figures and market information are for record keeping and general information. Verify important values against official records.</p></div></section>
     <section class="section" style="padding-top:0"><div class="container"><div class="contact-card" data-reveal><div><p class="eyebrow">Questions or feedback?</p><h2>We’d love to hear from you.</h2><p>Get help with OneView, share feedback, or tell us what you would like to see next.</p></div><a class="button button-primary" href="/contact">Contact Us →</a></div></div></section>
   </main>
   <footer class="site-footer"><div class="container footer-grid"><div><a class="brand" href="/"><img src="assets/oneview-mark.svg" alt=""><span>One<em>View</em></span></a><p>© 2026 <a class="footer-author" href="https://ahsan2000.github.io/portfolio" target="_blank" rel="noopener noreferrer">Ahsan Nawaz</a>. One place for every investment.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="/about">About Us</a><a href="/contact">Contact Us</a><a href="/privacy">Privacy policy</a><a href="/terms">Terms &amp; conditions</a></nav></div></footer>

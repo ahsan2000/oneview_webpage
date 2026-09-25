@@ -1,30 +1,30 @@
 const slides = [
   {
-    image: "assets/screenshot-dashboard.png",
+    image: "assets/screenshot-dashboard.webp",
     title: "Your complete picture",
     description: "See your total portfolio value, invested amount, and performance over time in one clear view.",
     alt: "OneView overview showing portfolio value and performance chart",
   },
   {
-    image: "assets/screenshot-portfolio-mix.png",
+    image: "assets/screenshot-portfolio-mix.webp",
     title: "Portfolio mix",
     description: "Understand how stocks, mutual funds, and VPS / pension holdings contribute to your portfolio.",
     alt: "OneView portfolio mix showing category allocation and stock sectors",
   },
   {
-    image: "assets/screenshot-investments.png",
+    image: "assets/screenshot-investments.webp",
     title: "Every investment, organized",
     description: "Search and filter holdings, then review units, current prices, and returns for each investment.",
     alt: "OneView Investment screen with search, category filters, and holding cards",
   },
   {
-    image: "assets/screenshot-activity.png",
+    image: "assets/screenshot-activity.webp",
     title: "A clear activity history",
     description: "Browse your recorded buys, sells, dividends, and fees, with category filters and sorting.",
     alt: "OneView Activity screen showing dated transactions and filters",
   },
   {
-    image: "assets/screenshot-settings.png",
+    image: "assets/screenshot-settings.webp",
     title: "Your data, your control",
     description: "Choose a theme, import statements, manage backups, and set device security options.",
     alt: "OneView Settings screen showing appearance, local files, and biometric lock",
@@ -47,10 +47,22 @@ if (showcase) {
   const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
   let autoplayEnabled = !motionPreference.matches;
 
+  // Download and decode every slide up front. By the time the visitor reaches
+  // the showcase, changing `src` can use an image that is already in memory
+  // instead of leaving the previous screenshot visible during a network wait.
+  const slideImages = slides.map((slide, index) => {
+    const cachedImage = new Image();
+    cachedImage.decoding = "async";
+    cachedImage.fetchPriority = index === 1 ? "high" : "low";
+    cachedImage.src = slide.image;
+    cachedImage.decode?.().catch(() => {});
+    return cachedImage;
+  });
+
   function showSlide(index, announce = false) {
     current = (index + slides.length) % slides.length;
     const slide = slides[current];
-    image.src = slide.image;
+    image.src = slideImages[current].src;
     image.alt = slide.alt;
     image.classList.remove("slide-enter");
     void image.offsetWidth;

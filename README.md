@@ -25,7 +25,7 @@ The website does not complete Play Console declarations. Review the app’s **Da
 - The mark in `assets/oneview-mark.svg` follows the Android launcher vector in the OneView app.
 - The five screenshots in `assets/` were captured from the connected Android phone. The dashboard, portfolio mix, Investment, and Activity screenshots show real portfolio figures, as requested. The gallery visually crops the phone status and system navigation bars in CSS.
 - The gallery advances every three seconds while it is in view. Visitors can choose a screen, use previous/next, or pause autoplay. Autoplay starts off for visitors who prefer reduced motion.
-- `assets/inter-variable.ttf` comes from the app’s Inter font; its license is copied to `assets/inter-license.txt`.
+- `assets/inter-variable.woff2` is the web-optimized subset of the app’s Inter font; its license is copied to `assets/inter-license.txt`.
 
 ## Local preview
 
